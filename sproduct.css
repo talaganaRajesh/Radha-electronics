@@ -1,0 +1,73 @@
+#prodetails .single-pro-img{
+    width: 318px;
+    margin-right: 50px;
+    margin-left: 56px;
+    padding-bottom: 50px;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+    border: 1px solid rgb(201, 194, 194);
+    border-radius: 2px;
+}
+.main-img{
+    border: 1px solid rgb(183, 176, 176);
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+
+#prodetails{
+    display: flex;
+    margin-top: 0px;
+}
+
+#prodetails .single-pro-details{
+    width: 30%;
+    padding-top: 60px;
+}
+#prodetails .single-pro-details h4{
+    padding: 8px 0 11px 0;
+}
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+#prodetails .single-pro-details span{
+    color: rgb(112, 112, 112);
+    font-weight: 500;
+}
+#prodetails .single-pro-details select{
+    display: flex;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+#prodetails .single-pro-details input {
+    height: 38px;
+    width: 27px;
+    padding-left: 18px;
+    font-size: 16px;
+    margin-right: 11px;
+    margin-top: 16px;
+    margin-bottom: 13px;
+}
+#prodetails .single-pro-details input:focus{
+    outline: none;
+}
+#prodetails .single-pro-details button {
+    background-color: rgb(16, 132, 101);
+    border: none;
+    border-radius: 5px;
+    height: 46px;
+    width: 130px;
+    color: rgb(252, 252, 252);
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+#prodetails .single-pro-details button:hover{
+    background-color: rgb(16, 164, 115);
+}

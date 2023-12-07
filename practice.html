@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Header Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            transition: top 0.3s;
+        }
+
+        .hidden {
+            top: -100px; /* Adjust this value to control how much the header is hidden */
+        }
+
+        /* Add your other styles here */
+
+        section {
+            height: 1000px; /* Add some content to scroll through */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header id="main-header">
+    <h1>Your Website</h1>
+</header>
+
+<section>
+    <!-- Your page content goes here -->
+    <p>Scroll down and up to see the header behavior.</p>
+</section>
+
+<script>
+    const body = document.body;
+    const header = document.getElementById('main-header');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll <= 0) {
+            body.classList.remove('scroll-up');
+            header.classList.remove('hidden');
+        }
+
+        if (currentScroll > lastScroll && !body.classList.contains('scroll-down')) {
+            body.classList.remove('scroll-up');
+            body.classList.add('scroll-down');
+            header.classList.add('hidden');
+        } else if (currentScroll < lastScroll && body.classList.contains('scroll-down')) {
+            body.classList.remove('scroll-down');
+            body.classList.add('scroll-up');
+            header.classList.remove('hidden');
+        }
+
+        lastScroll = currentScroll;
+    });
+</script>
+
+</body>
+</html>
