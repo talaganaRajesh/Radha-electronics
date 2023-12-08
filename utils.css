@@ -192,4 +192,40 @@ h1,h2,h3,h4,h5{
     }
 
 
+    /* Media queries for ABOUT page */
+
+
+    #about-head img {
+        padding: 42px 1px 5px 1px;
+    }
+    #about-head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #about-head div{
+       margin: 0px;
+    }
+    #page-header.about-header{
+        height: 20vh;
+    }
+
+
+    /* Contact page */
+
+    #contact-details .map{
+        display: none;
+    }
+    #contact-details .details {
+        padding: 22px 17px -8px 5px;
+    }
+    #contact-details .details h2 {
+        margin: 2px -131px 8px -1px;
+    }
+    
 }
+
+
+
+
+

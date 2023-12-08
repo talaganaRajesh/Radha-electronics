@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="blog.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="cart.css">
 </head>
 
 <body>
@@ -23,8 +24,8 @@
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a class="active" href="contact.html">contact</a></li>
-                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </div>
@@ -33,61 +34,60 @@
         </div>
     </section>
 
-    <section id="page-header" class="about-header">
+    <section id="page-header" class="cart-header">
         <h1>#Get-in-touch</h1>
         <p>Let's discuss all your queries here !</p>
     </section>
 
-    <section id="contact-details">
-        <div class="details">
-            <span>Get in touch</span>
-            <h2>Visit our agency location in Berhampur</h2>
-            <h3>Head Office</h3>
+    <section id="cart">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+                    <td><img src="smart-phone2.jpg" alt=""></td>
+                    <td>Apple Smart Phone</td>
+                    <td>$118.9</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.9</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+                    <td><img src="smart-phone3.jpg" alt=""></td>
+                    <td>Apple Smart Phone</td>
+                    <td>$118.9</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.9</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+                    <td><img src="smart-phone.jpg" alt=""></td>
+                    <td>Apple Smart Phone</td>
+                    <td>$118.9</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.9</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
             <div>
-                <li>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>Berhampur , odisha ,761005</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>radhaelectronics@gmail.com</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-phone"></i>
-                    <p>+91 9696932385</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-business-time"></i>
-                    <p>Monday-saturday</p>
-                </li>
+                <input type="text" placeholder="Enter your coupon">
+                <button>Apply</button>
             </div>
-        </div>
-
-        <div class="map">
-            <img src="contact-img.avif" alt="">
-        </div>
-    </section>
-
-    <section id="form-details">
-        <form action="">
-            <span>Leave a message</span>
-            <h2>We love to hear from you </h2>
-            <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Subject">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <button>Submit</button>
-        </form>
-    </section>
-
-    <section id="newsletter">
-        <div class="newstext">
-            <h4>Sign up for Newsletters </h4>
-            <p>Get E-Mail updates about our new productes and <span>special offers .</span></p>
-        </div>
-        <div class="form">
-            <input type="text" placeholder="Your E-Mail address">
-            <button>sign up</button>
         </div>
     </section>
 
