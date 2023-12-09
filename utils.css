@@ -19,7 +19,7 @@ h1,h2,h3,h4,h5{
         align-items: flex-start;
         justify-content: flex-start;
         position: fixed;
-        top: 0;
+        top: 36px;
         right: -350px;
         height: 50vh;
         width: 300px;
