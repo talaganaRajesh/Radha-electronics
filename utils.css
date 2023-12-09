@@ -77,10 +77,10 @@ h1,h2,h3,h4,h5{
         margin-top: 10px;
     }
     #sm-banner .banner-box {
-        height: 352px;
-        min-width: 339px;
-        margin-left: -18px;
-        margin-bottom: 22px;
+        height: 224px;
+        min-width: 288px;
+        margin-left: -15px;
+        margin-bottom: 34px;
     }
     #hero{
         height: 190px;
@@ -103,10 +103,18 @@ h1,h2,h3,h4,h5{
     #hero button {
         font-size: 2px;
         margin-top: 9px;
+        color: white;
+        font-size: 10px;
+        background-size: 114px;
+        padding: 5px 9px 6px 7px;
+        background-image: none;
+        background-color: #00c18d;
+        border-radius: 8px;
+        margin: 4px 1px 0px 3px;
     }
-    #hero button:hover{
+    /* #hero button:hover{
         font-size: 2.5px;
-    }
+    } */
     #product1 .pro{
         width: 100%;
     }
@@ -135,17 +143,12 @@ h1,h2,h3,h4,h5{
         border: 1px solid rgb(138, 136, 136);
     }
     .small-img-group{
-        width: 100%;
+        width: 90%;
         height: 72px;
     }
     .single-pro-img {
-        width: 318px;
-        margin-right: 50px;
-        margin-left: 56px;
-        margin-bottom: -110px;
-        padding-bottom: 0px;
-        align-items: center;
-        justify-content: center;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .small-img{
         height: 55px;
@@ -224,8 +227,3 @@ h1,h2,h3,h4,h5{
     }
     
 }
-
-
-
-
-
